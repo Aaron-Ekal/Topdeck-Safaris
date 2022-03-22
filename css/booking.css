@@ -18,9 +18,9 @@ body {
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-play-state: running;
-  animation-timing-function: ease-in-out; */
+  animation-timing-function: ease-in-out;
 }
- @keyframes animate {
+@keyframes animate {
   0% {
     background-image: url("/images/bg2.jpg");
   }
@@ -39,4 +39,19 @@ body {
   100% {
     background-image: url("/images/bg1.jpg");
   }
+}
+
+.pack1,
+.pack2,
+.pack3 {
+  width: 25%;
+}
+.pack1 img {
+  max-width: 100%;
+}
+.pack2 img {
+  max-width: 100%;
+}
+.pack3 img {
+  max-width: 100%;
 }
