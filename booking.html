@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/02b0d3571e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/booking.css" />
   </head>
   <body>
@@ -13,12 +14,14 @@
     </div>
 
     <div class="packages">
-      <div>
+
+
         <h1>packages</h1>
-      </div>
-      <div>
+
       <div class="wild-tours">
-        Domestic
+        <h2> Domestic</h2>
+      <div class="wild-packages">
+
         <div class="pack1">
           <img src="images/wd1.jpg" alt="" />
           <p>
@@ -31,7 +34,7 @@
               <li>Accommodation:</li>
             </ul>
           </p>
-          <button>Book Now</button>
+          <button onclick="submitFn()">Book Now</button>
         </div>
         <div class="pack2">
           <img src="images/wd2.jpg" alt="" />
@@ -63,6 +66,210 @@
         </div>
       </div>
     </div>
+
+    <div class="coast-tours">
+      <h2>coast holiday packages</h2>
+      <div class="cst-packages">
+      <div class="coast1">
+        <img src="images/cst1.jpg" alt="" />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Accusantium blanditiis a, rem quaerat deserunt quo tenetur eligendi
+          delectus quasi laboriosam!
+          <ul>
+            <li>Destination:</li>
+            <li>Transport:</li>
+            <li>Accommodation:</li>
+          </ul>
+        </p>
+        <button>Book Now</button>
+      </div>
+      <div class="coast2">
+        <img src="images/cst2.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
+          voluptas veniam nemo, consectetur esse repellat eligendi laborum
+          delectus hic voluptatum.
+          <ul>
+            <li>Destination:</li>
+            <li>Transport:</li>
+            <li>Accommodation:</li>
+          </ul>
+        </p>
+        <button>Book Now</button>
+      </div>
+      <div class="coast3">
+        <img src="images/cst3.jpg" alt="" />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
+          aliquid aperiam impedit est officiis perferendis tenetur dolor iure
+          rerum vitae.
+          <ul>
+            <li>Destination:</li>
+            <li>Transport:</li>
+            <li>Accommodation:</li>
+          </ul>
+        </p>
+        <button>Book Now</button>
+      </div>
+    </div>
+    </div>
+
+    <div class="weekend-tours">
+      <h2>weekend holiday packages</h2>
+      <div class="wknd-packages">
+      <div class="wknd1">
+        <img src="images/wkn1.jpg" alt="" />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Accusantium blanditiis a, rem quaerat deserunt quo tenetur eligendi
+          delectus quasi laboriosam!
+          <ul>
+            <li>Destination:</li>
+            <li>Transport:</li>
+            <li>Accommodation:</li>
+          </ul>
+        </p>
+        <button>Book Now</button>
+      </div>
+      <div class="wknd2">
+        <img src="images/wkn2.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
+          voluptas veniam nemo, consectetur esse repellat eligendi laborum
+          delectus hic voluptatum.
+          <ul>
+            <li>Destination:</li>
+            <li>Transport:</li>
+            <li>Accommodation:</li>
+          </ul>
+        </p>
+        <button>Book Now</button>
+      </div>
+      <div class="wknd3">
+        <img src="images/wkn3.jpg" alt="" />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
+          aliquid aperiam impedit est officiis perferendis tenetur dolor iure
+          rerum vitae.
+          <ul>
+            <li>Destination:</li>
+            <li>Transport:</li>
+            <li>Accommodation:</li>
+          </ul>
+        </p>
+        <button>Book Now</button>
+      </div>
+    </div>
+    </div>
+
+    <div class="holiday-tours">
+      <h2>Special holiday packages</h2>
+      <div class="hold-packages">
+      <div class="hold1">
+        <img src="images/hol1.jpg" alt="" />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Accusantium blanditiis a, rem quaerat deserunt quo tenetur eligendi
+          delectus quasi laboriosam!
+          <ul>
+            <li>Destination:</li>
+            <li>Transport:</li>
+            <li>Accommodation:</li>
+          </ul>
+        </p>
+        <button>Book Now</button>
+      </div>
+      <div class="hold2">
+        <img src="images/hol2.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
+          voluptas veniam nemo, consectetur esse repellat eligendi laborum
+          delectus hic voluptatum.
+          <ul>
+            <li>Destination:</li>
+            <li>Transport:</li>
+            <li>Accommodation:</li>
+          </ul>
+        </p>
+        <button>Book Now</button>
+      </div>
+      <div class="hold3">
+        <img src="images/hol3.jpg" alt="" />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
+          aliquid aperiam impedit est officiis perferendis tenetur dolor iure
+          rerum vitae.
+          <ul>
+            <li>Destination:</li>
+            <li>Transport:</li>
+            <li>Accommodation:</li>
+          </ul>
+        </p>
+        <button>Book Now</button>
+      </div>
+    </div>
+    </div>
+
+    <!-- Modal box -->
+    <div class="modalBox">
+      <div class="modalContent">
+      <span><i class="fa-solid fa-xmark"></i></span>
+      <div class="formHolder">
+
+        <h3>Make a Trip Reservation in Minutes</h3>
+
+        <form action="">
+          <div class="flexInputs">
+            <label for="">Please Enter Your Name</label>
+        <input type="text" id="name" placeholder="John Doe...">
+          </div>
+          <div class="address-div">
+
+          <div class="flexInputs">
+          <label for="">Email Address</label>
+            <input type="email" id="email" placeholder="Email...">
+        </div>
+          <div class="flexInputs">
+            <label for="">Telephone/Mobile</label>
+            <input type="number" id="mobile" placeholder="Telephone/Mobile...">
+        </div>
+      </div>
+      <div class="persons">
+        <div class="flexInputs">
+        <label for="">Number of Adults</label>
+        <input type="number">
+      </div>
+      <div class="flexInputs">
+        <label for="">Number of Children</label>
+        <input type="number">
+      </div>
+    </div>
+    <div class="datesPick">
+      <div class="flexInputs">
+        <label for="">Check-in Date</label>
+        <input type="date">
+      </div>
+      <div class="flexInputs">
+        <label for="">Check-out Date</label>
+        <input type="date">
+      </div>
+    </div>
+        </form>
+
+        <p id="submit" onclick="myFunction()">Submit</p>
+          <p id="info"></p>
+          <div class="btn-close">
+          <p id="close-btn"></p>
+        </div>
+
+
+      </div>
+      </div>
+          </div>
+
+
+
     </div>
   </body>
 </html>

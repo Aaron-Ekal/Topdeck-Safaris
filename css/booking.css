@@ -11,7 +11,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* transition: 5s; */
+  transition: 5s;
   animation-name: animate;
   animation-direction: alternate-reverse;
   animation-duration: 30s;
@@ -42,11 +42,24 @@ body {
 }
 .packages {
   background-color: aliceblue;
-  display: flex;
-  justify-content: center;
 }
+.packages button {
+  background-color: orange;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+}
+
 .wild-tours {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wild-packages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .pack1,
 .pack2,
@@ -67,4 +80,122 @@ h1 {
 }
 .pack3 img {
   max-width: 100%;
+}
+.coast1,
+.coast2,
+.coast3 {
+  width: 30%;
+  background-color: white;
+  padding: 10px;
+  margin: 3px;
+}
+.coast-tours {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.cst-packages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.coast1 img {
+  max-width: 100%;
+}
+.coast2 img {
+  max-width: 100%;
+}
+.coast3 img {
+  max-width: 100%;
+}
+.wknd1,
+.wknd2,
+.wknd3 {
+  width: 30%;
+  background-color: white;
+  padding: 10px;
+  margin: 3px;
+}
+.weekend-tours {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.wknd-packages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.wknd1 img {
+  max-width: 100%;
+}
+.wknd2 img {
+  max-width: 100%;
+}
+.wknd3 img {
+  max-width: 100%;
+}
+.hold1,
+.hold2,
+.hold3 {
+  width: 30%;
+  background-color: white;
+  padding: 10px;
+  margin: 3px;
+}
+.holiday-tours {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.hold-packages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.hold1 img {
+  max-width: 100%;
+}
+.hold2 img {
+  max-width: 100%;
+}
+.hold3 img {
+  max-width: 100%;
+}
+.modalBox {
+  border: 1px solid black;
+  width: 60%;
+  margin: 10px;
+}
+.formHolder h3 {
+  background-color: orange;
+  padding: 20px;
+}
+form {
+  padding: 30px;
+}
+input {
+  padding: 7px;
+}
+.address-div,
+.persons,
+.datesPick {
+  display: flex;
+  flex-direction: row;
+}
+#submit {
+  background-color: orange;
+  width: 10%;
+}
+#name {
+  width: 65%;
+}
+.flexInputs {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  padding: 5px;
 }
