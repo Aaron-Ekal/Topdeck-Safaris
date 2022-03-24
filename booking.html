@@ -23,24 +23,29 @@
         <h1>packages</h1>
 
       <div class="wild-tours">
-        <h2> Domestic</h2>
+        <h2> Domestic Packages</h2>
       <div class="wild-packages">
 
+
         <div class="pack1">
+         <strong>Experience a weekend with Elephants</strong>
           <img src="images/wd1.jpg" alt="" />
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Accusantium blanditiis a, rem quaerat deserunt quo tenetur eligendi
             delectus quasi laboriosam!
             <ul>
-              <li>Destination:</li>
-              <li>Transport:</li>
-              <li>Accommodation:</li>
+              <li>Destination:Sheldrick Wildlife Trust</li>
+              <li>Transport:Landcruiser/Minivan</li>
+              <li>Accommodation:Various Options</li>
             </ul>
+            3 Days, 2 nights<br>
+            Price: Ksh 7000pp
           </p>
-          <button class="book" onclick="myfunction()">Book Now</button>
+          <button id="sheldrick" class="book" onclick="myfunction(7000)">Book Now</button>
         </div>
         <div class="pack2">
+          <strong>Experience a weekend at the famous Aberdares</strong>
           <img src="images/wd2.jpg" alt="" />
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque
@@ -51,10 +56,13 @@
               <li>Transport:</li>
               <li>Accommodation:</li>
             </ul>
+            3 Days, 2 nights<br>
+            Price: Ksh 8000pp
           </p>
           <button class="book" onclick="myfunction()">Book Now</button>
         </div>
         <div class="pack3">
+          <strong>Wilderbeast migration at the Mara</strong>
           <img src="images/wd3.jpg" alt="" />
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
@@ -65,6 +73,8 @@
               <li>Transport:</li>
               <li>Accommodation:</li>
             </ul>
+            3 Days, 2 nights<br>
+            Price: Ksh 8000pp
           </p>
           <button class="book" onclick="myfunction()" >Book Now</button>
         </div>
@@ -214,7 +224,7 @@
       </div>
     </div>
     </div>
-
+    <div id="message"></div>
     <!-- Modal box -->
     <div class="modalBox">
       <div class="modalContent">
@@ -223,10 +233,11 @@
 
         <h3>Make a Trip Reservation in Minutes</h3>
 
+
         <form action="">
           <div class="flexInputs">
             <label for="">Please Enter Your Name</label>
-        <input type="text" id="name" name="fullName"  placeholder="John Doe..." required>
+        <input type="text" id="name" name="fullName"  placeholder="John Doe...">
           </div>
 
           <div class="address-div">
@@ -237,17 +248,17 @@
         </div>
           <div class="flexInputs">
             <label for="">Telephone/Mobile</label>
-            <input type="number" id="mobile" placeholder="Telephone/Mobile...">
+            <input type="number" id="mobile" placeholder="Telephone/Mobile..." min="1" max="9">
         </div>
       </div>
       <div class="persons">
         <div class="flexInputs">
         <label for="">Number of Adults</label>
-        <input type="number">
+        <input type="number" id="adults" min="15" max="10">
       </div>
       <div class="flexInputs">
         <label for="">Number of Children</label>
-        <input type="number">
+        <input type="number" id="children">
       </div>
     </div>
     <div class="datesPick">
@@ -260,10 +271,11 @@
         <input type="date">
       </div>
     </div>
-    <button onclick="test()" type="button"> test</button>
+    <button onclick="test()" type="button">test</button>
+    <p id="info"></p>
         </form>
 
-        <p id="info"></p>
+
 
         <!-- <p id="submit" onclick="myFunction()">Submit</p>
           <p id="info"></p>
