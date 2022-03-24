@@ -22,19 +22,19 @@ body {
 }
 @keyframes animate {
   0% {
-    background-image: url(../images/pic1.jpg);
+    background-image: url(../imagesF/pic1.jpg);
   }
   25% {
-    background-image: url(../images/pic11.jpg);
+    background-image: url(../imagesF/pic11.jpg);
   }
   50% {
-    background-image: url(../images/pic2.jpg);
+    background-image: url(../imagesF/pic2.jpg);
   }
   75% {
-    background-image: url(../images/pic3.jpg);
+    background-image: url(../imagesF/pic3.jpg);
   }
   100% {
-    background-image: url(../images/pic6.jpg);
+    background-image: url(../imagesF/pic6.jpg);
   }
 }
 
