@@ -68,3 +68,26 @@ button a {
 .center .btns {
   margin-top: 20px;
 }
+
+.center .btns button {
+  height: 55px;
+  width: 170px;
+  border-radius: 15px;
+  border: none;
+  margin: 0 10px;
+  border: 2px white solid;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+.center .btns button:first-child {
+  color: #ffdb58;
+  background: none;
+}
+.center .btns button:first-child:hover {
+  background: #ffdb58;
+  color: black;
+}
