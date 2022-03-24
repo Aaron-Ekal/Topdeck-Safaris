@@ -1,0 +1,100 @@
+nav {
+    position: relative;
+    background: transparent;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 12;
+  }
+  nav .menu {
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .menu .logo a {
+    text-decoration: none;
+    color: yellow;
+    font-size: 48px;
+    font-weight: 650;
+    margin-left: auto;
+  }
+  .menu ul {
+    display: inline-flex;
+  }
+  .menu ul li {
+    list-style: none;
+    margin-left: 9px;
+  }
+  .menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 23px;
+    font-weight: 500;
+    padding: 15px 16px;
+    display: inline-flex;
+    border-radius: 60px;
+    transition: all 0.3s ease;
+  }
+  .menu ul li a:hover {
+    background: yellow;
+    color: #000;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #e1e429;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #d1e237;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #acab80;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
