@@ -1,7 +1,7 @@
 let typed = new Typed(".auto-type", {
   strings: [
     "Hi Adventurer",
-    "Brings Africa Close",
+    "Brings Adventure To You",
     "makes it happen!",
     "Ensures Your Security",
     "Your Travelling Companion",
