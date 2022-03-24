@@ -59,7 +59,7 @@
             3 Days, 2 nights<br>
             Price: Ksh 8000pp
           </p>
-          <button class="book" onclick="myfunction()">Book Now</button>
+          <button class="book" onclick="myfunction(8000)">Book Now</button>
         </div>
         <div class="pack3">
           <strong>Wilderbeast migration at the Mara</strong>
@@ -228,10 +228,12 @@
     <!-- Modal box -->
     <div class="modalBox">
       <div class="modalContent">
-      <span><i class="fa-solid fa-xmark"></i></span>
-      <div class="formHolder">
 
-        <h3>Make a Trip Reservation in Minutes</h3>
+      <div class="formHolder">
+      <div class="formHead">
+        <h3>Make a Trip Reservation in Minutes </h3>
+        <span class="close">&times;</span>
+        </div>
 
 
         <form action="">
@@ -248,13 +250,13 @@
         </div>
           <div class="flexInputs">
             <label for="">Telephone/Mobile</label>
-            <input type="number" id="mobile" placeholder="Telephone/Mobile..." min="1" max="9">
+            <input type="number" id="mobile" placeholder="Telephone/Mobile...">
         </div>
       </div>
       <div class="persons">
         <div class="flexInputs">
         <label for="">Number of Adults</label>
-        <input type="number" id="adults" min="15" max="10">
+        <input type="number" id="adults">
       </div>
       <div class="flexInputs">
         <label for="">Number of Children</label>
@@ -264,14 +266,14 @@
     <div class="datesPick">
       <div class="flexInputs">
         <label for="">Check-in Date</label>
-        <input type="date">
+        <input type="date" id="indate">
       </div>
       <div class="flexInputs">
         <label for="">Check-out Date</label>
-        <input type="date">
+        <input type="date" id="outDate">
       </div>
     </div>
-    <button onclick="test()" type="button">test</button>
+    <button onclick="test()" type="button">Submit</button>
     <p id="info"></p>
         </form>
 

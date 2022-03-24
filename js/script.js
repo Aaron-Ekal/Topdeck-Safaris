@@ -37,6 +37,18 @@ function updateChildren(e) {
   numChildren = e.target.value;
   console.log(numChildren);
 }
+let checkInDate;
+document.getElementById("indate").addEventListener("change", updateCheckIn);
+function updateCheckIn(e) {
+  checkInDate = e.target.value;
+  console.log(checkInDate);
+}
+let checkOutDate;
+document.getElementById("outDate").addEventListener("change", updateCheckOut);
+function updateCheckOut(e) {
+  checkOutDate = e.target.value;
+  console.log(checkOutDate);
+}
 
 test = () => {
   console.log(fullName);
@@ -57,8 +69,16 @@ test = () => {
 
   bookingDetails["children"] = numChildren;
   console.log(numChildren);
-  var total = numAdults * 700 + numChildren * 50;
-  var message = "hey there," + total;
+
+  bookingDetails["InDate"] = checkInDate;
+  console.log(checkInDate);
+
+  bookingDetails["outDate"] = checkOutDate;
+  console.log(checkOutDate);
+  console.log(typeof bookingDetails["adults"], "hhh");
+
+  var total = numAdults * 7000 + numChildren * 50;
+  var message = `hey there, ${fullName}. your total amount for the trip on${checkInDate} to ${checkOutDate} is${total}.`;
   document.getElementById("message").innerHTML = message;
 };
 

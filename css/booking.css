@@ -172,7 +172,6 @@ h1 {
   margin: 10px;
 }
 .formHolder h3 {
-  background-color: orange;
   padding: 20px;
 }
 form {
@@ -209,4 +208,11 @@ input {
   left: 20%;
   right: 0%;
   top: 0;
+}
+.formHead {
+  display: flex;
+
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: green;
 }
