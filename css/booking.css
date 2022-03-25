@@ -5,47 +5,24 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
-.container {
+/* .container {
   height: 100vh;
   width: 100%;
   background-image: url("/images/bg1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* transition: 5s;
-  animation-name: animate;
-  animation-direction: alternate-reverse;
-  animation-duration: 30s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-  animation-timing-function: ease-in-out; */
-}
-/* @keyframes animate {
-  0% {
-    background-image: url("/images/bg2.jpg");
-  }
-  20% {
-    background-image: url("/images/bg3.jpg");
-  }
-  40% {
-    background-image: url("/images/bg4.jpg");
-  }
-  60% {
-    background-image: url("/images/bg5");
-  }
-  80% {
-    background-image: url("/images/bg3");
-  }
-  100% {
-    background-image: url("/images/bg1.jpg");
-  }
 } */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 .packages {
   background-color: aliceblue;
 }
 .packages button {
-  background-color: orange;
+  background-color: #e1ad01;
   padding: 10px;
   border-radius: 15px;
   border: none;
@@ -70,9 +47,7 @@ body {
   padding: 10px;
   margin: 3px;
 }
-h1 {
-  background-color: rgb(145, 100, 34);
-}
+
 .pack1 img {
   max-width: 100%;
 }
@@ -174,6 +149,13 @@ h1 {
 .formHolder h3 {
   padding: 20px;
 }
+.formHead {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #e1ad01;
+}
+
 form {
   padding: 30px;
 }
@@ -187,11 +169,11 @@ input {
   flex-direction: row;
 }
 #submit {
-  background-color: orange;
+  background-color: #e1ad01;
   width: 10%;
 }
 #name {
-  width: 65%;
+  width: 203%;
 }
 .flexInputs {
   display: flex;
@@ -201,18 +183,23 @@ input {
 }
 /* modalBox */
 .modalBox {
-  /* display: none; */
+  display: none;
   background-color: rgba(255, 255, 255, 0.8);
-  /* position: fixed; */
+  position: fixed;
   z-index: 1;
   left: 20%;
   right: 0%;
   top: 0;
 }
-.formHead {
-  display: flex;
 
-  flex-direction: row;
-  justify-content: flex-end;
-  background-color: green;
+#message {
+  padding: 50px;
+  background-color: #b5952f;
+  color: white;
+}
+.close {
+  margin-left: 241px;
+}
+.grey {
+  color: rgba(94, 94, 94, 0.898);
 }

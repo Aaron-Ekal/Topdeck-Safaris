@@ -5,6 +5,10 @@ $(".book").click(function () {
   modal.show();
 });
 
+$(".close").click(function () {
+  modal.hide();
+});
+
 let bookingDetails = {};
 
 function myfunction(price) {
@@ -25,13 +29,13 @@ function updateEmail(e) {
   emailAdress = e.target.value;
   console.log(emailAdress);
 }
-let numAdults;
+let numAdults = 0;
 document.getElementById("adults").addEventListener("change", updateAdults);
 function updateAdults(e) {
   numAdults = e.target.value;
   console.log(numAdults);
 }
-let numChildren;
+let numChildren = 0;
 document.getElementById("children").addEventListener("change", updateChildren);
 function updateChildren(e) {
   numChildren = e.target.value;
@@ -76,10 +80,17 @@ test = () => {
   bookingDetails["outDate"] = checkOutDate;
   console.log(checkOutDate);
   console.log(typeof bookingDetails["adults"], "hhh");
+  var total = parseInt(numAdults) * 7000 + parseInt(numChildren) * 50;
+  console.log("numAdults :>> ", total);
 
-  var total = numAdults * 7000 + numChildren * 50;
-  var message = `hey there, ${fullName}. your total amount for the trip on${checkInDate} to ${checkOutDate} is${total}.`;
-  document.getElementById("message").innerHTML = message;
+  var message = `Hey there, ${fullName}. Your total amount for the trip on ${checkInDate} to ${checkOutDate} is ${total}.`;
+  // document.getElementById("message").innerHTML = message;
+  var receipt_container = document.createElement("div");
+  receipt_container.setAttribute("id", "message");
+  var text = document.createTextNode(message);
+  receipt_container.append(text);
+  document.getElementById("form_container").style.display = "none";
+  document.getElementById("modal_content").append(receipt_container);
 };
 
 // test = () => {
