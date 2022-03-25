@@ -200,3 +200,6 @@ input {
 .close {
   margin-left: 241px;
 }
+.grey {
+  color: rgba(94, 94, 94, 0.898);
+}
